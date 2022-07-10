@@ -3,9 +3,9 @@ import CurrenyConverter from './components/CurrencyConverter';
 
 function App() {
   return (
-   <div>
-    <Newsfeed />
+   <div className="app">
     <CurrenyConverter />
+    <Newsfeed />
    </div>
   )
 }

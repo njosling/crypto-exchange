@@ -5,3 +5,14 @@
 .currency-converter{
     background-color: bisque;
 }
+
+.exchange-rate{
+    background-color: antiquewhite;
+}
+
+.app{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
