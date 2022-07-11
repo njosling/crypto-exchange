@@ -1,7 +1,9 @@
-function ExchangeRate({exchangeRate}) {
+function ExchangeRate({exchangeRate, chosenPrimaryCurrency, chosenSecondaryCurrency}) {
   return (
    <div className = "exchange-rate">
-    {exchangeRate}
+    <h3>Exchange Rate:</h3>
+    <h1>{exchangeRate}</h1>
+    <p>{chosenPrimaryCurrency} To {chosenSecondaryCurrency}</p>
    </div>
   )
 }

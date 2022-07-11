@@ -89,6 +89,8 @@ function CurrenyConverter() {
 
 			<ExchangeRate 
 			 exchangeRate = {exchangeRate}
+			 chosenPrimaryCurrency = {chosenPrimaryCurrency}
+			 chosenSecondaryCurrency = {chosenSecondaryCurrency}
 			/>
 		</div>
 	)
