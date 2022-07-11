@@ -12,7 +12,7 @@ function Newsfeed() {
         method: 'GET',
         url: 'https://crypto-news-live3.p.rapidapi.com/news',
         headers: {
-          'X-RapidAPI-Key': 'e53b9f3b34msh800a751ec6b5494p1004adjsnaec83c9c9d83',
+          'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
           'X-RapidAPI-Host': 'crypto-news-live3.p.rapidapi.com'
         }
       };

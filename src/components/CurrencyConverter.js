@@ -20,7 +20,7 @@ function CurrenyConverter() {
 			url: 'https://alpha-vantage.p.rapidapi.com/query',
 			params: { from_currency: chosenPrimaryCurrency, function: 'CURRENCY_EXCHANGE_RATE', to_currency: chosenSecondaryCurrency },
 			headers: {
-				'X-RapidAPI-Key': 'e53b9f3b34msh800a751ec6b5494p1004adjsnaec83c9c9d83',
+				'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
 				'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com'
 			}
 		};
