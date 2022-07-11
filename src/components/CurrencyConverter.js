@@ -2,7 +2,6 @@ import { useState } from 'react'
 import ExchangeRate from "./ExchangeRate"
 import axios from 'axios'
 
-
 function CurrenyConverter() {
 
 	const currencies = ['BTC', 'ETH', 'USD', 'NZD', 'XRP', 'LTC', 'ADA']
@@ -13,7 +12,6 @@ function CurrenyConverter() {
 	const [result, setResult] = useState(0)
 
 	const convert = () => {
-
 
 		const options = {
 			method: 'GET',
@@ -35,15 +33,16 @@ function CurrenyConverter() {
 
 	return (
 		<div className="currency-converter">
-			<h2>Currency Converter</h2>
+			<h2 className='heading'>Currency Converter</h2>
 
 			<div className="inputbox">
 				<table>
 					<tbody>
 						<tr>
-							<td>Primary Currency</td>
+							<td>Primary Currency:</td>
 							<td>
 								<input
+									className='inputs'
 									type="number"
 									name="currency-amount-1"
 									value={amount}
@@ -61,10 +60,13 @@ function CurrenyConverter() {
 								</select>
 							</td>
 						</tr>
+						<br />
 						<tr>
-							<td>Secondary Currency</td>
+							<td>Secondary Currency:</td>
 							<td>
 								<input
+									id='secondary-input'
+									className='inputs'
 									name="currency-amount-2"
 									value={result}
 									disabled = {true}

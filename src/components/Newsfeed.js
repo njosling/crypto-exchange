@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import axios from 'axios'
+
 
 function Newsfeed() {
 
@@ -32,10 +32,10 @@ function Newsfeed() {
 
     return (
      <div className = "news-feed">
-        <h2>News Feed</h2>
+        <h2 className='heading'>News Feed</h2>
         {firstSevenArticles?.map((article, _index) => (
         <div key={_index}>
-         <a href={article.url}><p>{article.title}</p></a>
+         <a className="links" href={article.url}><p>- {article.title}</p></a>
          </div>))}
      </div>
     )

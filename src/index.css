@@ -1,18 +1,77 @@
-.news-feed{
-    background-color: beige
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+    background-color: #1d2326;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+button{
+    background-color: #008cff;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: larger;
+    padding: 0.3rem 1rem;
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+input{
+    font-size: larger;
+    margin-left: 1rem;
+}
+#secondary-input{
+    color: black;
 }
 
-.currency-converter{
-    background-color: bisque;
+select{
+    font-size: larger;
+    border: none;
+    padding: 0 0.2rem;
+    margin-left: 0.5rem;
+    border-radius: 50px;
 }
 
-.exchange-rate{
-    background-color: antiquewhite;
+.heading{
+    text-align: center;
+    
 }
-
 .app{
+    margin-top: 90px;
+    border-radius: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+.currency-converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.4rem;
+}
+.inputs{
+    border: none;
+    width: 110px;
+    border-radius: 5px;
+}
+.inputs:focus{
+    outline: none;
+}
+.news-feed{
+    text-align: center;
+    width: 650px;
+}
+.links{
+    text-decoration: underline;
+    color: white;
+}
+.links:hover{
+    text-decoration: none;
+}
+.news-feed, .currency-converter{
+    background-color: #374147;
+    border-radius: 30px;
+    padding: 1rem 3.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
